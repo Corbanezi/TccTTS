@@ -4,7 +4,7 @@ import whisper
 import pyttsx3  
 import os
 
-openai.api_key = "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"
+openai.api_key = ""
 
 sem_palavra_ativadora = True
 
