@@ -19,7 +19,6 @@ falar = True
 if entrada_por_texto:
     sem_palavra_ativadora = True
 
-
 def generate_answer(messages):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
