@@ -1,0 +1,16 @@
+Instalar python 3.8 > na maquina pela microsoft store ou pelo terminal
+
+Instalar jupiter kernel in VsCode
+
+instalar dependences:
+
+Comando: pip install --upgrade *biblioteca* 
+
+lista de bibliotecas:
+pandas
+pyttsx3
+openai
+ffmpeg-python
+PyAudio
+whisper-openai
+SpeechRecognition
