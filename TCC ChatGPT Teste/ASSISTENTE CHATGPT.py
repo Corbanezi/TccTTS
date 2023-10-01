@@ -72,7 +72,7 @@ while True:
                 ajustar_ambiente_noise = False
             print("Faça sua pergunta")
             audio = r.listen(fonte)
-            print("Reconhecendo...")
+            print("Pensando...")
 
             if escolher_stt == "google":
                 question = r.recognize_google(audio, language="pt-BR")
@@ -86,10 +86,10 @@ while True:
     if ("desligar" in question and "assistente" in question) or question.startswith("sair"):
         print(question, "Saindo.")
         if falar:
-            talk("Okay...até mais")
+            talk("Muito obrigado pela conversa...até mais")
         break
     elif question == "":
-        print("No sound")
+        print("esperando a pergunta")
         continue
     elif question.startswith("Assistente") or question.startswith("assistente") or question.startswith(
             "chat GPT") or sem_palavra_ativadora:
@@ -98,7 +98,7 @@ while True:
 
         answer = generate_answer(mensagens)
 
-        print("Resposta ChatGPT:", answer[0])
+        print("Resposta ChatBotInteligente:", answer[0])
 
         if debug_custo:
             print("Cost:\n", answer[1])
